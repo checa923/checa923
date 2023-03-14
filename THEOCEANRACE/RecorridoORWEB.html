@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Inicio</a>
+    <a href="RecorridoORWEB.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Recorrido</a>
+    <a href="Patrocinadores_ORW.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Patrocinadores</a>
+   
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="RecorridoORWEB.html">IMOCA CLASS ROUTE</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="RecorridoVO65ORWEB.html">VO65 ROUTE</a>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+	<img src="IMG/IMOCA_ROUTE.png" alt="IMOCA_ROUTE" width="1600" height="480">
+      <h1 class="w3-text-teal">RUTA IMOCA</h1>
+      <p>Los equipos de la categoria IMOCA visitaran  nueve ciudades internacionales emblemáticas a lo largo de seis meses, partiendo de Alicante (España)
+	  en enero de 2023 y finalizando en Génova (Italia) a finales de junio.</p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">ETAPAS</h1>
+      <p><br>La primera etapa se trata de un sprint de 1.900 millas nauticas desde Alicante a Cabo Verde. Los equipos deberan recorrerse el mar mediterranea y atravesando el estrecho de Gibraltar, empezar a bajar al sur para adentrarse en el oceano atlántico y llegar a Cabo Verde
+	  <br></br>
+	  La segunda etapa esta marcada por la navegación puramente oceánica va desde Cabo Verde hasta Cape Town recorriendo 460 millas nauticas. Los equipos IMOCA deberán de tratar de buscar la mejor ruta a través del ecuador para adentrarse de la mejor manera posible en el principio del Oceano Sur antes de llegar a Cape Town.</p>
+	  <br></br>
+	  La tercera etapa es un maratón de 12.750 millas nauticas por todo el oceano sur, convirtiendose así en una etapa record y se convierte en la mas larga en 5 décadas. Esta etapa transcurre desde Cape Town hasta Itajaí y además tres cuartas partes de esta etapa se completan alrededor de la parte inferior del mundo.
+	   <br></br>
+	   La cuarta etapa es la última gran transición del sur al norte de la regata yendo desde Itajaí hasta NewPort atravesando la zona de calmas del ecuador del planeta. Esta etapa cuenta con 5.550 millas nauticas que recorrer.
+	   <br></br>
+	   En quinta etapa, los equipos volverán a Europa tras una travesía por el atlántico de 3.500 millas nauticas que saldrá desde NewPort hasta el puerto de Aarhus. Esta etapa es de las mas importantes porque puede decidir el ganador de la Ocean Race 2023 ya que es una etapa de doble puntuación.
+	   <br></br>
+	   La sexta y penúltima etapa consta de un sprint de 3 dias y 800 millas nauticas desde Aarhus hasta La Haya, pero antes de llegar a La Haya, los equipos deberán rodear una baliza que se encuentra en Kiel. Esto es debido a que es una etapa muy corta y el comité de la Ocean Race decidío en útimo momento añadirlo para que haya mas recorrido.
+	   <br></br>
+	   La septima y última etapa de la edición de la Ocean Race 2023 es una compleja travesía y 2.200 millas nauticas que llevara a los equipos desde La Haya hasta la última linea de meta que se encuentra en Génova. Los equpos deberán de bajar al sur de España y atravesar otra vez el estrecho de Gibraltar para subir por la costa mediterranea y llegar a Génova.
+	   <br></br>
+	   Por último habra una regata en el puerto de Génova donde los IMOCA daran su último esfuerzo para rascar los más puntos posibles.
+    </div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    
+    
+  </div>
+
+  
+
+  
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

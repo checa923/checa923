@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+}
+
+
+}
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="file:///C:/Users/alejandroperezc.car/Desktop/THEOCEANRACE/WEB_OCEAN_RACE.html#" class="w3-bar-item w3-button w3-theme-l1">Inicio</a>
+    <a href="file:///C:/Users/alejandroperezc.car/Desktop/THEOCEANRACE/RecorridoORWEB.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Recorrido</a>
+    <a href="file:///C:/Users/alejandroperezc.car/Desktop/THEOCEANRACE/Patrocinadores_ORW.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Patrocinadores</a>
+   
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="file:///C:/Users/alejandroperezc.car/Desktop/THEOCEANRACE/IMOCA_CLASSORWEB.html">IMOCA CLASS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="file:///C:/Users/alejandroperezc.car/Desktop/THEOCEANRACE/VO65ORWEB.html">VO65</a>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+<img src="IMG/ATSTART.jpg" alt="First_Leg" width="1500" height="600">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">The Ocean Race</h1>
+      <p>The Ocean Race es una competición de vela que consta de varias etapas alrededor del mundo.
+	  Esta edición de la Ocean Race es la primera en la que va a haber dos categorias diferentes. Por un lado tenemos la de siempre , los VO65, y por otro lado tenemos a los nuevos de la clase IMOCA que tienden a dar puro espectaculo.</p>
+    </div>
+   
+  </div>
+  
+  
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">¿Desde cuando se realiza esta competición?</h1>
+      <p>La primera edición tuvo inicio el dia 8 de septiembre de 1973, con 17 barcos y duro 152 dias. La regata se realizaba originalmente en 4 etapas.
+	  En 1989 pasaron a ser 6 etapas pero desde 1997 son nueve o diez etapas. 
+	  La mejor edición de esta regata fue la de 2015 ya que fue la mas competida, que tuvo comienzo en Alicante (ESP) que conto con 7 equipos (VO65). 
+	  La edición de 2015 acabo con todos los equipos ganando una etapa y decidiendola por 1 etapa de diferencia siendo la regata mas competida de la historia.</p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">¿Cual es el propósito de The Ocean Race?</h1>
+      <p>The Ocean Race Summits apoyan el Objetivo de Desarrollo Sostenible 14 de las Naciones Unidas (ODS 14) para conservar y utilizar de manera sostenible los océanos, los mares y los recursos marinos.
+	  El objetivo destaca que "Salvar nuestro océano debe seguir siendo una prioridad".</p>
+    </div>
+   
+  </div>
+
+ 
+  </div>
+
+  
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
